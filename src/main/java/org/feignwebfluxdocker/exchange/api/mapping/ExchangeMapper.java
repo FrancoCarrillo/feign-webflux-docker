@@ -26,7 +26,6 @@ public class ExchangeMapper {
         Exchange exchange = mapper.map(response, Exchange.class);
 
         exchange.setCreatedDate(LocalDateTime.now());
-        exchange.setDestinationAmount(1.1);
 
         return exchange;
 

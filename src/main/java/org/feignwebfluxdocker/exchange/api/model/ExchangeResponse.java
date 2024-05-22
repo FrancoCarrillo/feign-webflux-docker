@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Builder
 @Data
 @AllArgsConstructor
@@ -15,4 +17,5 @@ public class ExchangeResponse {
     private Double originAmount;
     private String destinationCurrency;
     private Double destinationAmount;
+    private LocalDateTime createdDate;
 }
